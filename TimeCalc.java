@@ -14,7 +14,7 @@ public class TimeCalc {
      int totminutes = Integer.parseInt(addtime) + minutes + (60 * hours) ;
      int newhours =  tothours % 24 ;
      int newminutes = (totminutes - (60 * tothours));
-     if (newminutes < 10 && newminutes < 10) {
+     if (newminutes < 10 && newhours < 10) {
             System.out.println("0" + newhours + ":0" + newminutes );
      } else if (newminutes < 10 ) {
          System.out.println( newhours + ":0" + newminutes );
