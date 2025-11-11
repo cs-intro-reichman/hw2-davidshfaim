@@ -2,5 +2,29 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
+	int n = Integer.parseInt(args[0]);
+	double countbig = 0 ;
+	double countsmall = 0 ;
+	while (n > 0) {
+		double r = Math.random();
+		if (r > 0.5){
+			countbig++ ;
+		} else { 
+			countsmall++ ;
+		}
+		n--;
+	}
+	double averag = (countbig / countsmall) ;
+	System.out.println("> 0.5: " + countbig + " times");
+	System.out.println("<= 0.5: " + countsmall + " times");
+	if ((countbig == 0 || countsmall == 0) ) {
+		System.out.println();
+	} else {
+		System.out.println("Ratio: " + averag ) ;
+	}
+{
 	}
 }
+}
+	
+
