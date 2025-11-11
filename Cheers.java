@@ -14,7 +14,7 @@ public class Cheers {
                         }
                 }        
                 
- System.out.println("what does that spell?");
+ System.out.println("What does that spell?");
                                 
  for (int h = 0; h < n; h++){
 
