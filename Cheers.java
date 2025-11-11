@@ -5,6 +5,7 @@ public class Cheers {
             String cheer = args[0];
                 int n = Integer.parseInt(args[1]);
                 String anletter = "AEFHILMNORSX";
+                cheer = cheer.toUpperCase();
                 for (int i = 0; i < cheer.length(); i++) {
                  char ch = cheer.charAt(i);
                  if (anletter.indexOf(ch) != -1 ) {
